@@ -3,13 +3,15 @@ Laravel-based AJAX Contact Manager with XML import/export, add/edit/delete (incl
 
 Laravel AJAX Contact Manager 📇
   This is a small project built with Laravel that lets you manage contacts easily. You can:
-    📥 Import contacts from an XML file
-    ➕ Add new contacts
-    ✏️ Edit existing ones
-    ❌ Delete one or many contacts at once
-    ✅ Check if form inputs are correct (both in browser and on the server)
-    🔁 Use all features without refreshing the page (thanks to AJAX)
-    💾 Save data in a MySQL database
+      - 📥 Import contacts from an XML file
+      - ➕ Add new contacts
+      - ✏️ Edit existing ones
+      - ❌ Delete one or many contacts at once
+      - ✅ Check if form inputs are correct (both in browser and on the server)
+      - 🔁 Use all features without refreshing the page (thanks to AJAX)
+      - 💾 Save data in a MySQL database
+      
+    
 
 🚀 Main Features
   - Built with Laravel 10
