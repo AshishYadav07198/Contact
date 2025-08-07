@@ -1,35 +1,55 @@
-# Contact
-Laravel-based AJAX Contact Manager with XML import/export, add/edit/delete (including bulk delete), and real-time validation. Uses MySQL for storage and supports international characters and phone formats. Fully dynamic UI with jQuery AJAX and responsive design for a seamless user experience.
+# 📇 Laravel AJAX Contact Manager
 
-Laravel AJAX Contact Manager 📇
-  This is a small project built with Laravel that lets you manage contacts easily. You can:
-      - 📥 Import contacts from an XML file
-      - ➕ Add new contacts
-      - ✏️ Edit existing ones
-      - ❌ Delete one or many contacts at once
-      - ✅ Check if form inputs are correct (both in browser and on the server)
-      - 🔁 Use all features without refreshing the page (thanks to AJAX)
-      - 💾 Save data in a MySQL database
-      
-    
+A Laravel-based contact management system with full **AJAX** functionality, **XML import**, **bulk delete**, and **client/server-side validation**. Seamlessly manage your contacts using a beautiful UI and real-time interactions — all without page reloads.
 
-🚀 Main Features
-  - Built with Laravel 10
-  - Uses MySQL to store contacts
-  - AJAX is used for adding, editing, and deleting contacts
-  - Can read contacts from XML files using simplexml
-  - Supports bulk delete
-  - Checks for valid input on both client and server side
-  - Looks good and works well on all devices
+---
 
-🧑‍💻 Technologies Used
-  | What        | Tool / Version  |
-  | ----------- | --------------- |
-  | Backend     | Laravel 10      |
-  | Programming | PHP 8           |
-  | Database    | MySQL 5.7 or 8+ |
-  | Frontend    | jQuery 3.6      |
-  | Design      | Custom CSS      |
-  | XML Reader  | SimpleXML       |
+## 🚀 Features
 
-I’ve added the SQL file in the SQL FILE folder.
+- 📥 Import contacts from an XML file
+- ➕ Add new contacts
+- ✏️ Edit existing contacts
+- ❌ Delete one or multiple contacts (bulk delete)
+- ✅ Validate form inputs on both frontend and backend
+- 🔁 All operations use AJAX (no page reload)
+- 💾 Contacts are saved in a **MySQL** database
+- 🌐 Supports **international characters** in names and phone numbers (e.g., Şeküre Ruhiye)
+
+---
+
+## 💻 Tech Stack
+
+| Layer        | Tool / Version     |
+|--------------|--------------------|
+| Backend      | Laravel 10         |
+| Programming  | PHP 8              |
+| Database     | MySQL 5.7 or 8+    |
+| Frontend     | jQuery 3.6         |
+| Design       | Custom CSS         |
+| XML Handling | SimpleXML (PHP)    |
+
+---
+
+## 📂 Project Structure
+
+- `resources/views/contacts/index.blade.php` - Main contact list with AJAX actions
+- `resources/views/contacts/form.blade.php` - Add/Edit contact form (AJAX-enabled)
+- `app/Http/Controllers/ContactController.php` - All CRUD + import logic
+- `routes/web.php` - Route definitions
+- `SQL FILE/contacts.sql` - Exported SQL file (database schema)
+
+---
+
+## 🧪 Validation Rules
+
+- **Name**: Required, only letters, spaces, and some special characters (supports Unicode)
+- **Phone**: Must be 10 digits and stored with +91 prefix (`+911234567890`)
+
+---
+
+## 📁 SQL Setup
+
+To set up the database manually:
+
+1. Create a MySQL database (e.g., `contact_crud`)
+2. Import the provided SQL file:
