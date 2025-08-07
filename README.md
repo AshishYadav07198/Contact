@@ -21,7 +21,7 @@ A Laravel-based contact management system with full **AJAX** functionality, **XM
 
 | Layer        | Tool / Version     |
 |--------------|--------------------|
-| Backend      | Laravel 10         |
+| Backend      | Laravel 12         |
 | Programming  | PHP 8              |
 | Database     | MySQL 5.7 or 8+    |
 | Frontend     | jQuery 3.6         |
