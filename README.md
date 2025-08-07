@@ -38,12 +38,6 @@ A Laravel-based contact management system with full **AJAX** functionality, **XM
 - `routes/web.php` - Route definitions
 - `SQL FILE/contacts.sql` - Exported SQL file (database schema)
 
----
-
-## 🧪 Validation Rules
-
-- **Name**: Required, only letters, spaces, and some special characters (supports Unicode)
-- **Phone**: Must be 10 digits and stored with +91 prefix (`+911234567890`)
 
 ---
 
